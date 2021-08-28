@@ -1,0 +1,71 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="netbanking.css">
+<script language='javascript'>
+var myVar;
+function redirect()
+{
+var conf=window.confirm("Do you want to Confirm Transaction?");
+if(conf==true)
+{
+myVar=setTimeout(trans_success,1200);
+return true;
+}
+else
+{
+return false;
+}
+}
+function trans_success()
+{
+window.alert('TRANSACTION SUCCESSFULL!!');
+window.location='final_page_one.php';
+}
+</script>
+</head>
+<body align=center>
+<form method="get">
+<h3>Amount Details</h3>
+<table border=5 align="center" cellpadding=10 cellspacing=3 >
+
+<tr>
+<td> TRANSACTION  ID: </td>
+<td> 01234567890 </td>
+</tr>
+
+<tr>
+<td> From Account:</td>
+<td> THARUNRAJ</td>
+</tr>
+
+<tr>
+<td> To Account: </td>
+<td> BLUE BUS.in PVT.LTD </td>
+</tr>
+
+<tr>
+<td> ACCOUNT NO: </td>
+<td> XXXXXXXXXX </td>
+</tr>
+
+<tr>
+<td> AMOUNT: </td>
+<td> 4800/- </td>
+</tr>
+
+
+</table>
+<p align="center" style="font-size:150%;">
+
+Enter Transaction Password:&nbsp<input type=password>
+<br><br>
+
+Enter OTP:
+&nbsp<input type="number">
+</p>
+
+<input type="button" value="Proceed and Pay" onclick="redirect()">
+<input type="reset" value="Resend OTP">
+</form>
+</body>
+</html>

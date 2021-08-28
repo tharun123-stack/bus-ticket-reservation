@@ -1,0 +1,266 @@
+<html>
+
+
+<head>
+
+<style>
+
+.back{
+background-color: #FA3D4B;
+}
+
+.sub {
+width: 80%;
+height: 85%;
+margin: 5% 0% 0% 14%;
+background-color: white;
+border-radius: 4%;
+position: fixed;
+border-top-right-radius: 2%;
+border-bottom-right-radius: 2%;
+}
+
+
+.left {
+width: 30%;
+height: 100%;
+float:left; //mainly used for holding the div tags colums
+}
+
+.right {
+width: 90%;
+height: 100%;
+}
+
+
+.image {
+border-top-left-radius: 4%;
+border-bottom-left-radius: 4%;
+width: 100%;
+height: 100%;
+}
+
+.heading {
+margin: 20px 0px 0px 100px;
+}
+
+
+.text {
+font-family:Verdana;
+font-size: 20px;
+}
+
+
+.align {
+margin: 0px 0px 0px 80px;
+}
+
+.align2 {
+margin: 0px 0px 0px 100px;
+}
+
+ 
+
+
+
+.box1 {
+border-top-style:hidden;
+border-right-style:hidden;
+border-left-style: hidden;
+border-bottom-style: 1px grey;
+width:52%;
+height:7%;
+outline: none;
+
+}
+
+.box2{
+border-top-style:hidden;
+border-right-style:hidden;
+border-left-style: hidden;
+border-bottom-style: 1px grey;
+width:20%;
+height:7%;
+outline: none;
+
+}
+
+.box3{
+border-top-style:hidden;
+border-right-style:hidden;
+border-left-style: hidden;
+border-bottom-style: 1px grey;
+width:10%;
+height:7%;
+outline: none;
+
+}
+
+.box4{
+border-top-style:hidden;
+border-right-style:hidden;
+border-left-style: hidden;
+border-bottom-style: hidden;
+width:12%;
+height:5%;
+outline: none;
+size:20px;
+
+}
+
+.button {
+width:  70px;
+height: 30px;
+border: none;
+outline: none;
+background-color:#FA3D4B;
+color: white;
+margin: 0px 0px 0px 300px;
+}
+
+select {
+font-family: Verdana;
+font-size: 14px;
+color: #A3333;
+}
+
+
+::placeholder {
+  color: #918888;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+} // for removing the scroll of number input
+
+
+</style>
+
+
+
+</head>
+
+<body class="back">
+<p id="common"></p>
+<p id="common2"></p>
+<p id="common3"></p>
+<p id="common4"></p>
+<p id="common5"></p>
+<div class="sub">
+
+<div class="left">
+<img src="image 7.jpg" class="image">
+</div>
+
+
+
+<div class="right">
+<form>
+
+
+<h1 class="heading"> Debit Card </h1>
+<br>
+<input  type="text" style="font-size:20px;" id="a1" class="align box1" autocomplete="off" placeholder="Card Number       XXXX-XXXX-XXXX-XXXX" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" required>
+<br>
+ <br><br>
+<input type="text" style="font-size:20px;" id="b1" class="align box2" autocomplete="off" placeholder="Name" required>
+<input type="number" style="font-size:20px;" id="c1" class="align2 box3" autocomplete="off" placeholder="CVV" pattern="[0-9]{3}" required>
+<br>
+<br><br>
+<font size=4px color=#918888 class="align">Expiry Date</font>
+<br>
+<br><br>
+
+<select class="align box4" id="d1" required>
+  <option value="January">January</option>
+  <option value="February">February</option>
+  <option value="March">March</option>
+  <option value="April">April</option>
+  <option value="May">May</option>
+  <option value="June">June</option>
+  <option value="July">July</option>
+  <option value="August">August</option>
+  <option value="September">September</option>
+  <option value="October">October</option>
+  <option value="November">November</option>
+  <option value="December">December</option>
+</select>
+
+
+<select class="align box4" id="e1">
+  <option value="2020">2020</option>
+  <option value="2021">2021</option>
+  <option value="2022">2022</option>
+  <option value="2023">2023</option>
+  <option value="2024">2024</option>
+  <option value="2025">2025</option>
+
+</select>
+<br>
+
+
+<input type="submit" id="f1" onclick=confirm() class="button">
+</form>
+</div>
+
+</div>
+
+
+<script>
+function confirm()
+{
+var number;
+var name;
+var month;
+var year;
+var cvv;
+
+number=document.getElementById("a1").value;
+name=document.getElementById("b1").value;
+month=document.getElementById("c1").value;
+year=document.getElementById("d1").value;
+cvv=document.getElementById("e1").value;
+
+if(number == "")
+{
+window.alert("Enter your Card Number please !!");
+return false; //makes sure that the value is again re typed
+}
+
+else if(name == "")
+{
+window.alert("Please Enter the Name......");
+return false; //makes sure that the value is again re typed
+}
+
+else if(month == "")
+{
+window.alert("Please Enter Month......");
+return false; //makes sure that the value is again re typed
+}
+
+else if(year == "")
+{
+window.alert("Please Enter Year.....");
+return false; //makes sure that the value is again re typed
+}
+
+
+else if(cvv == "")
+{
+window.alert("Please Enter CVV.....");
+return false; //makes sure that the value is again re typed
+}
+else
+{
+alert('TRANSACTION SUCCESSFULL!!');
+ window.open("final_page_one.php","", "width=1080, height=1000"); 
+}
+}
+</script>
+
+</body>
+
+</html>

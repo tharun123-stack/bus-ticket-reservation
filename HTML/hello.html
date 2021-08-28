@@ -1,0 +1,1856 @@
+
+<html>
+
+<head>
+<style>
+
+.button1 {
+width:  30px;
+height: 30px;
+background-color: grey;
+border: none;
+border-radius: 35%;
+cursor: pointer;
+margin: 1px 0px 0px 1px;
+outline: none;
+}
+
+.button2 {
+width:  30px;
+height: 30px;
+background-color: grey;
+border: none;
+border-radius: 35%;
+cursor: pointer;
+margin: 5px 0px 0px 7px;
+outline: none;
+}
+
+.button1:hover {
+opacity :0.5;
+}
+ 
+.button2:hover {
+opacity :0.5;
+}
+
+.line {
+  border-left: 1px solid black;
+  left: 540px;
+  top : 110px;
+  height: 200px;
+  position: absolute;
+}
+
+.confirm {
+width:  70px;
+height: 30px;
+border: none;
+outline: none;
+border-radius:5px;
+background-color:#52D74D;
+color: white;
+}
+
+
+.confirm:hover{
+background-color:green;
+}
+
+
+.align {
+margin: 3% 0% 0% 48%;
+}
+
+
+.bus {
+width:  70%;
+height: 70%;
+border-style: solid;
+margin: 40px 0px 0px 4px;
+
+}
+
+.image {
+margin:20px 0px 0px 25px;
+}
+
+
+h1 { 
+color: #BA3B3B; 
+font-family: 'Rouge Script', cursive; 
+font-size: 40px; 
+font-weight: normal; 
+line-height: 48px;  
+
+}
+
+
+
+.details {
+border-top-style:hidden;
+border-right-style:hidden;
+border-left-style: hidden;
+border-bottom-style: groove;
+//border-color: #DA7D5B;
+width: 15%;
+font-size: 17px;
+padding: 5px;
+outline: none;
+}
+
+
+.age {
+border-top-style:hidden;
+border-right-style:hidden;
+border-left-style: hidden;
+border-bottom-style: groove;
+//border-color: #DA7D5B;
+width: 5%;
+font-size: 17px;
+padding: 5px;
+outline: none;
+}
+
+
+
+
+.form-container {
+display: none;
+}
+table {
+  border: 3px solid black;
+  border-collapse: collapse;
+}
+
+</style>
+</head>
+
+<body >
+<font color="red"><h3 align=center>Select Your Seats!!!</h3></font>
+<table cellpadding=10 align=center>
+<tr valign="top">
+<td rowspan=2 style="border-right: 3px solid black;">
+<img src="Driver2.jpeg" alt="driver" width=45px height=55px class="image"></td>
+<td>&nbsp
+<button id="a1" class="button1" type="button"  onclick="f1()"  > </button>
+&nbsp&nbsp&nbsp&nbsp
+<button id="a2" class="button1" type="button"  onclick="f2()"  > </button>
+&nbsp&nbsp&nbsp&nbsp 
+<button id="a3" class="button1" type="button"  onclick="f3()"  > </button>
+&nbsp&nbsp&nbsp&nbsp 
+<button id="a4" class="button1" type="button"  onclick="f4()"  > </button>
+&nbsp&nbsp&nbsp&nbsp 
+<button id="a5" class="button1" type="button"  onclick="f5()"  > </button>
+&nbsp&nbsp&nbsp&nbsp 
+<button id="a6" class="button1" type="button"  onclick="f6()"  > </button>
+&nbsp&nbsp&nbsp&nbsp 
+<button id="a7" class="button1" type="button"  onclick="f7()"  > </button>
+&nbsp&nbsp&nbsp&nbsp 
+<button id="a8" class="button1" type="button"  onclick="f8()"  > </button>
+&nbsp&nbsp&nbsp&nbsp 
+<button id="a9" class="button1" type="button"  onclick="f9()"  > </button>
+<br>
+<button id="a10" class="button2" type="button"  onclick="f10()"  > </button>
+&nbsp&nbsp&nbsp&nbsp 
+<button id="a11" class="button1" type="button"  onclick="f11()"  > </button>
+&nbsp&nbsp&nbsp&nbsp 
+<button id="a12" class="button1" type="button"  onclick="f12()"  > </button>
+&nbsp&nbsp&nbsp&nbsp 
+<button id="a13" class="button1" type="button"  onclick="f13()"  > </button>
+&nbsp&nbsp&nbsp&nbsp 
+<button id="a14" class="button1" type="button"  onclick="f14()"  > </button>
+&nbsp&nbsp&nbsp&nbsp 
+<button id="a15" class="button1" type="button"  onclick="f15()"  > </button>
+&nbsp&nbsp&nbsp&nbsp 
+<button id="a16" class="button1" type="button"  onclick="f16()"  > </button>
+&nbsp&nbsp&nbsp&nbsp 
+<button id="a17" class="button1" type="button"  onclick="f17()"  > </button>
+&nbsp&nbsp&nbsp&nbsp 
+<button id="a18" class="button1" type="button"  onclick="f18()"  > </button></td>
+</tr>
+<tr>
+<td><br>
+<button id="a19" class="button2" type="button"  onclick="f19()"  > </button>
+&nbsp&nbsp&nbsp&nbsp 
+<button id="a20" class="button1" type="button"  onclick="f20()"  > </button>
+&nbsp&nbsp&nbsp&nbsp 
+<button id="a21" class="button1" type="button"  onclick="f21()"  > </button>
+&nbsp&nbsp&nbsp&nbsp 
+<button id="a22" class="button1" type="button"  onclick="f22()"  > </button>
+&nbsp&nbsp&nbsp&nbsp 
+<button id="a23" class="button1" type="button"  onclick="f23()"  > </button>
+&nbsp&nbsp&nbsp&nbsp 
+<button id="a24" class="button1" type="button"  onclick="f24()"  > </button>
+&nbsp&nbsp&nbsp&nbsp 
+<button id="a25" class="button1" type="button"  onclick="f25()"  > </button>
+&nbsp&nbsp&nbsp&nbsp 
+<button id="a26" class="button1" type="button"  onclick="f26()"  > </button>
+&nbsp&nbsp&nbsp&nbsp 
+<button id="a27" class="button1" type="button"  onclick="f27()"  > </button>
+<br>
+<button id="a28" class="button2" type="button"  onclick="f28()"  > </button>
+&nbsp&nbsp&nbsp&nbsp 
+<button id="a29" class="button1" type="button"  onclick="f29()"  > </button>
+&nbsp&nbsp&nbsp&nbsp 
+<button id="a30" class="button1" type="button"  onclick="f30()"  > </button>
+&nbsp&nbsp&nbsp&nbsp 
+<button id="a31" class="button1" type="button"  onclick="f31()"  > </button>
+&nbsp&nbsp&nbsp&nbsp 
+<button id="a32" class="button1" type="button"  onclick="f32()"  > </button>
+&nbsp&nbsp&nbsp&nbsp 
+<button id="a33" class="button1" type="button"  onclick="f33()"  > </button>
+&nbsp&nbsp&nbsp&nbsp 
+<button id="a34" class="button1" type="button"  onclick="f34()"  > </button>
+&nbsp&nbsp&nbsp&nbsp 
+<button id="a35" class="button1" type="button"  onclick="f35()"  > </button>
+&nbsp&nbsp&nbsp&nbsp 
+<button id="a36" class="button1" type="button"  onclick="f36()"  > </button></td>
+</tr>
+</table>
+</div>
+
+<div class="align"><button id="sub" class="confirm" input="button" onclick="final()">Confirm</button></div>
+<br>
+<div id="div2"></div>
+<br>
+
+<p id="text1"></p>
+<p id="text2"></p>
+<p id="text3"></p>
+<p id="text4"></p>
+<p id="text5"></p>
+<p id="text6"></p>
+<p id="text7"></p>
+<p id="text8"></p>
+<p id="text9"></p>
+<p id="common"></p>
+<p id="common1"></p>
+<p id="common2"></p>
+<p id="common3"></p>
+
+<script>
+var x1=x2=x3=x4=x5=x6=x7=x8=x9=x10=x11=x12=x13=x14=x15=x16=x17=x18=0;
+var x19=x20=x21=x22=x23=x24=x25=x26=x27=x28=x29=x30=x31=x32=x33=x34=x35=x36=0;
+var s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12,s13,s14,s15,s16,s17,s18;
+var s19,s20,s21,s22,s23,s24,s25,s26,s27,s28,s29,s30,s31,s32,s33,s34,s35,s36;
+var y1=y2=y3=y4=y5=y6=y7=y8=y9=y10=y11=y12=y13=y14=y15=y16=y17=y18=0;
+var y19=y20=y21=y22=y23=y24=y25=y26=y27=y28=y29=y30=y31=y32=y33=y34=y35=y36=0;
+var array= new Array(4);
+var i=0;
+var n=0;
+var seat=0;
+var name1,name2,name3,name3;
+var age_1,age_2,age_3,age_4;
+var male_1,male_11,male_111,male_1111;
+var female_2,female_22,female_222,female_2222;
+
+
+
+
+function f1() {
+if(x1%2==0  && i<4)
+{
+document.getElementById("a1").style.backgroundColor='#81DA43';
+//document.getElementById("a1").innerHTML="Seat Selected";
+
+x1++;
+i++;
+y1++;
+}
+else if(i==4 && y1==0) {
+document.getElementById("a1").disabled="true";
+}
+else
+{
+document.getElementById('a1').style.backgroundColor='grey';
+document.getElementById("a1").innerHTML=" ";
+x1--;
+i--;
+}
+//document.getElementById("common").innerHTML=i;
+}
+
+
+function f2() {
+if(x2%2==0 && i<4)
+{
+document.getElementById("a2").style.backgroundColor='#81DA43';
+//document.getElementById("a2").innerHTML="Seat Selected";
+
+x2++;
+i++;
+y2++;
+}
+else if(i==4 && y2==0) {
+document.getElementById("a2").disabled="true";
+}
+else
+{
+document.getElementById('a2').style.backgroundColor='grey';
+document.getElementById("a2").innerHTML=" ";
+x2--;
+i--;
+}
+//document.getElementById("common").innerHTML=i;
+}
+
+
+
+function f3() {
+if(x3%2==0 && i<4)
+{
+document.getElementById("a3").style.backgroundColor='#81DA43';
+//document.getElementById("a3").innerHTML="Seat Selected";
+
+x3++;
+i++;
+y3++;
+}
+else if(i==4 && y3==0) {
+document.getElementById("a3").disabled="true";
+}
+else
+{
+document.getElementById('a3').style.backgroundColor='grey';
+document.getElementById("a3").innerHTML=" ";
+x3--;
+i--;
+}
+//document.getElementById("common").innerHTML=i;
+}
+
+
+
+function f4() {
+if(x4%2==0 && i<4)
+{
+document.getElementById("a4").style.backgroundColor='#81DA43';
+//document.getElementById("a4").innerHTML="Seat Selected";
+
+x4++;
+i++;
+y4++;
+}
+else if(i==4 && y4==0) {
+document.getElementById("a4").disabled="true";
+}
+else
+{
+document.getElementById('a4').style.backgroundColor='grey';
+document.getElementById("a4").innerHTML=" ";
+x4--;
+i--;
+}
+//document.getElementById("common").innerHTML=i;
+}
+
+
+
+function f5() {
+if(x5%2==0 && i<4)
+{
+document.getElementById("a5").style.backgroundColor='#81DA43';
+//document.getElementById("a5").innerHTML="Seat Selected";
+
+x5++;
+i++;
+y5++;
+}
+else if(i==4 && y5==0) {
+document.getElementById("a5").disabled="true";
+}
+else
+{
+document.getElementById('a5').style.backgroundColor='grey';
+document.getElementById("a5").innerHTML=" ";
+x5--;
+i--;
+}
+//document.getElementById("common").innerHTML=i;
+}
+
+
+
+function f6() {
+if(x6%2==0 && i<4)
+{
+document.getElementById("a6").style.backgroundColor='#81DA43';
+//document.getElementById("a6").innerHTML="Seat Selected";
+
+x6++;
+i++;
+y6++;
+}
+else if(i==4 && y6==0) {
+document.getElementById("a6").disabled="true";
+}
+else
+{
+document.getElementById('a6').style.backgroundColor='grey';
+document.getElementById("a6").innerHTML=" ";
+x6--;
+i--;
+}
+//document.getElementById("common").innerHTML=i;
+}
+
+
+
+function f7() {
+if(x7%2==0 && i<4)
+{
+document.getElementById("a7").style.backgroundColor='#81DA43';
+//document.getElementById("a7").innerHTML="Seat Selected";
+
+x7++;
+i++;
+y7++;
+}
+else if(i==4 && y7==0) {
+document.getElementById("a7").disabled="true";
+}
+else
+{
+document.getElementById('a7').style.backgroundColor='grey';
+document.getElementById("a7").innerHTML=" ";
+x7--;
+i--;
+}
+//document.getElementById("common").innerHTML=i;
+}
+
+
+
+
+function f8() {
+if(x8%2==0 && i<4)
+{
+document.getElementById("a8").style.backgroundColor='#81DA43';
+//document.getElementById("a8").innerHTML="Seat Selected";
+
+x8++;
+i++;
+y8++;
+}
+else if(i==4 && y8==0) {
+document.getElementById("a8").disabled="true";
+}
+else
+{
+document.getElementById('a8').style.backgroundColor='grey';
+document.getElementById("a8").innerHTML=" ";
+x8--;
+i--;
+}
+//document.getElementById("common").innerHTML=i;
+}
+
+
+
+function f9() {
+if(x9%2==0 && i<4)
+{
+document.getElementById("a9").style.backgroundColor='#81DA43';
+//document.getElementById("a9").innerHTML="Seat Selected";
+
+x9++;
+i++;
+y9++;
+}
+else if(i==4 && y9==0) {
+document.getElementById("a9").disabled="true";
+}
+else
+{
+document.getElementById('a9').style.backgroundColor='grey';
+document.getElementById("a9").innerHTML=" ";
+x9--;
+i--;
+}
+//document.getElementById("common").innerHTML=i;
+}
+
+
+
+function f10() {
+if(x10%2==0 && i<4)
+{
+document.getElementById("a10").style.backgroundColor='#81DA43';
+//document.getElementById("a10").innerHTML="Seat Selected";
+
+x10++;
+i++;
+y10++;
+}
+else if(i==4 && y10==0) {
+document.getElementById("a10").disabled="true";
+}
+else
+{
+document.getElementById('a10').style.backgroundColor='grey';
+document.getElementById("a10").innerHTML=" ";
+x10--;
+i--;
+}
+//document.getElementById("common").innerHTML=i;
+}
+
+
+
+function f11() {
+if(x11%2==0 && i<4)
+{
+document.getElementById("a11").style.backgroundColor='#81DA43';
+//document.getElementById("a11").innerHTML="Seat Selected";
+
+x11++;
+i++;
+y11++;
+}
+else if(i==4 && y11==0) {
+document.getElementById("a11").disabled="true";
+}
+else
+{
+document.getElementById('a11').style.backgroundColor='grey';
+document.getElementById("a11").innerHTML=" ";
+x11--;
+i--;
+}
+//document.getElementById("common").innerHTML=i;
+}
+
+
+
+
+function f12() {
+if(x12%2==0 && i<4)
+{
+document.getElementById("a12").style.backgroundColor='#81DA43';
+//document.getElementById("a12").innerHTML="Seat Selected";
+
+x12++;
+i++;
+y12++;
+}
+else if(i==4 && y12==0) {
+document.getElementById("a12").disabled="true";
+}
+else
+{
+document.getElementById('a12').style.backgroundColor='grey';
+document.getElementById("a12").innerHTML=" ";
+x12--;
+i--;
+}
+//document.getElementById("common").innerHTML=i;
+}
+
+
+
+
+function f13() {
+if(x13%2==0 && i<4)
+{
+document.getElementById("a13").style.backgroundColor='#81DA43';
+//document.getElementById("a13").innerHTML="Seat Selected";
+
+x13++;
+i++;
+y13++;
+}
+else if(i==4 && y13==0) {
+document.getElementById("a13").disabled="true";
+}
+else
+{
+document.getElementById('a13').style.backgroundColor='grey';
+document.getElementById("a13").innerHTML=" ";
+x13--;
+y13--;
+i--;
+}
+//document.getElementById("common").innerHTML=i;
+}
+
+
+
+function f14() {
+if(x14%2==0 && i<4)
+{
+document.getElementById("a14").style.backgroundColor='#81DA43';
+//document.getElementById("a14").innerHTML="Seat Selected";
+
+x14++;
+i++;
+y14++;
+}
+else if(i==4 && y14==0) {
+document.getElementById("a14").disabled="true";
+}
+else
+{
+document.getElementById('a14').style.backgroundColor='grey';
+document.getElementById("a14").innerHTML=" ";
+x14--;
+i--;
+}
+//document.getElementById("common").innerHTML=i;
+}
+
+
+
+function f15() {
+if(x15%2==0 && i<4)
+{
+document.getElementById("a15").style.backgroundColor='#81DA43';
+//document.getElementById("a15").innerHTML="Seat Selected";
+
+x15++;
+i++;
+y15++;
+}
+else if(i==4 && y15==0) {
+document.getElementById("a15").disabled="true";
+}
+else
+{
+document.getElementById('a15').style.backgroundColor='grey';
+document.getElementById("a15").innerHTML=" ";
+x15--;
+i--;
+}
+//document.getElementById("common").innerHTML=i;
+}
+
+
+
+function f16() {
+if(x16%2==0 && i<4)
+{
+document.getElementById("a16").style.backgroundColor='#81DA43';
+//document.getElementById("a16").innerHTML="Seat Selected";
+
+x16++;
+i++;
+y16++;
+}
+else if(i==4 && y16==0) {
+document.getElementById("a16").disabled="true";
+}
+else
+{
+document.getElementById('a16').style.backgroundColor='grey';
+document.getElementById("a16").innerHTML=" ";
+x16--;
+i--;
+}
+//document.getElementById("common").innerHTML=i;
+}
+
+
+
+function f17() {
+if(x17%2==0 && i<4)
+{
+document.getElementById("a17").style.backgroundColor='#81DA43';
+//document.getElementById("a17").innerHTML="Seat Selected";
+
+x17++;
+i++;
+y17++;
+}
+else if(i==4 && y17==0) {
+document.getElementById("a17").disabled="true";
+}
+else
+{
+document.getElementById('a17').style.backgroundColor='grey';
+document.getElementById("a17").innerHTML=" ";
+x17--;
+i--;
+}
+//document.getElementById("common").innerHTML=i;
+}
+
+
+
+function f18() {
+if(x18%2==0 && i<4)
+{
+document.getElementById("a18").style.backgroundColor='#81DA43';
+//document.getElementById("a18").innerHTML="Seat Selected";
+
+x18++;
+i++;
+y18++;
+}
+else if(i==4 && y18==0) {
+document.getElementById("a18").disabled="true";
+}
+else
+{
+document.getElementById('a18').style.backgroundColor='grey';
+document.getElementById("a18").innerHTML=" ";
+x18--;
+i--;
+}
+//document.getElementById("common").innerHTML=i;
+}
+
+
+function f19() {
+if(x19%2==0 && i<4)
+{
+document.getElementById("a19").style.backgroundColor='#81DA43';
+//document.getElementById("a19").innerHTML="Seat Selected";
+
+x19++;
+i++;
+y19++;
+}
+else if(i==4 && y19==0) {
+document.getElementById("a19").disabled="true";
+}
+else
+{
+document.getElementById('a19').style.backgroundColor='grey';
+document.getElementById("a19").innerHTML=" ";
+x19--;
+i--;
+}
+//document.getElementById("common").innerHTML=i;
+}
+
+
+function f20() {
+if(x20%2==0 && i<4)
+{
+document.getElementById("a20").style.backgroundColor='#81DA43';
+//document.getElementById("a20").innerHTML="Seat Selected";
+
+x20++;
+i++;
+y20++;
+}
+else if(i==4 && y20==0) {
+document.getElementById("a20").disabled="true";
+}
+else
+{
+document.getElementById('a20').style.backgroundColor='grey';
+document.getElementById("a20").innerHTML=" ";
+x20--;
+i--;
+}
+//document.getElementById("common").innerHTML=i;
+}
+
+
+function f21() {
+if(x21%2==0 && i<4)
+{
+document.getElementById("a21").style.backgroundColor='#81DA43';
+//document.getElementById("a21").innerHTML="Seat Selected";
+
+x21++;
+i++;
+y21++;
+}
+else if(i==4 && y21==0) {
+document.getElementById("a21").disabled="true";
+}
+else
+{
+document.getElementById('a21').style.backgroundColor='grey';
+document.getElementById("a21").innerHTML=" ";
+x21--;
+i--;
+}
+//document.getElementById("common").innerHTML=i;
+}
+
+
+function f22() {
+if(x22%2==0 && i<4)
+{
+document.getElementById("a22").style.backgroundColor='#81DA43';
+//document.getElementById("a22").innerHTML="Seat Selected";
+
+x22++;
+i++;
+y22++;
+}
+else if(i==4 && y22==0) {
+document.getElementById("a22").disabled="true";
+}
+else
+{
+document.getElementById('a22').style.backgroundColor='grey';
+document.getElementById("a22").innerHTML=" ";
+x22--;
+i--;
+}
+//document.getElementById("common").innerHTML=i;
+}
+
+
+function f23() {
+if(x23%2==0 && i<4)
+{
+document.getElementById("a23").style.backgroundColor='#81DA43';
+//document.getElementById("a23").innerHTML="Seat Selected";
+
+x23++;
+i++;
+y23++;
+}
+else if(i==4 && y23==0) {
+document.getElementById("a23").disabled="true";
+}
+else
+{
+document.getElementById('a23').style.backgroundColor='grey';
+document.getElementById("a23").innerHTML=" ";
+x23--;
+i--;
+}
+//document.getElementById("common").innerHTML=i;
+}
+
+
+function f24() {
+if(x24%2==0 && i<4)
+{
+document.getElementById("a24").style.backgroundColor='#81DA43';
+//document.getElementById("a24").innerHTML="Seat Selected";
+
+x24++;
+i++;
+y24++;
+}
+else if(i==4 && y24==0) {
+document.getElementById("a24").disabled="true";
+}
+else
+{
+document.getElementById('a24').style.backgroundColor='grey';
+document.getElementById("a24").innerHTML=" ";
+x24--;
+i--;
+}
+//document.getElementById("common").innerHTML=i;
+}
+
+
+function f25() {
+if(x25%2==0 && i<4)
+{
+document.getElementById("a25").style.backgroundColor='#81DA43';
+//document.getElementById("a25").innerHTML="Seat Selected";
+
+x25++;
+i++;
+y25++;
+}
+else if(i==4 && y25==0) {
+document.getElementById("a25").disabled="true";
+}
+else
+{
+document.getElementById('a25').style.backgroundColor='grey';
+document.getElementById("a25").innerHTML=" ";
+x25--;
+i--;
+}
+//document.getElementById("common").innerHTML=i;
+}
+
+
+
+function f26() {
+if(x26%2==0 && i<4)
+{
+document.getElementById("a26").style.backgroundColor='#81DA43';
+//document.getElementById("a26").innerHTML="Seat Selected";
+
+x26++;
+i++;
+y26++;
+}
+else if(i==4 && y26==0) {
+document.getElementById("a26").disabled="true";
+}
+else
+{
+document.getElementById('a26').style.backgroundColor='grey';
+document.getElementById("a26").innerHTML=" ";
+x26--;
+i--;
+}
+//document.getElementById("common").innerHTML=i;
+}
+
+
+
+
+function f27() {
+if(x27%2==0 && i<4)
+{
+document.getElementById("a27").style.backgroundColor='#81DA43';
+//document.getElementById("a27").innerHTML="Seat Selected";
+
+x27++;
+i++;
+y27++;
+}
+else if(i==4 && y27==0) {
+document.getElementById("a27").disabled="true";
+}
+else
+{
+document.getElementById('a27').style.backgroundColor='grey';
+document.getElementById("a27").innerHTML=" ";
+x27--;
+i--;
+}
+//document.getElementById("common").innerHTML=i;
+}
+
+
+
+
+function f28() {
+if(x28%2==0 && i<4)
+{
+document.getElementById("a28").style.backgroundColor='#81DA43';
+//document.getElementById("a28").innerHTML="Seat Selected";
+
+x28++;
+i++;
+y28++;
+}
+else if(i==4 && y28==0) {
+document.getElementById("a28").disabled="true";
+}
+else
+{
+document.getElementById('a28').style.backgroundColor='grey';
+document.getElementById("a28").innerHTML=" ";
+x28--;
+i--;
+}
+//document.getElementById("common").innerHTML=i;
+}
+
+
+
+function f29() {
+if(x29%2==0 && i<4)
+{
+document.getElementById("a29").style.backgroundColor='#81DA43';
+//document.getElementById("a29").innerHTML="Seat Selected";
+
+x29++;
+i++;
+y29++;
+}
+else if(i==4 && y29==0) {
+document.getElementById("a29").disabled="true";
+}
+else
+{
+document.getElementById('a29').style.backgroundColor='grey';
+document.getElementById("a29").innerHTML=" ";
+x29--;
+i--;
+}
+//document.getElementById("common").innerHTML=i;
+}
+
+
+function f30() {
+if(x30%2==0 && i<4)
+{
+document.getElementById("a30").style.backgroundColor='#81DA43';
+//document.getElementById("a30").innerHTML="Seat Selected";
+
+x30++;
+i++;
+y30++;
+}
+else if(i==4 && y30==0) {
+document.getElementById("a30").disabled="true";
+}
+else
+{
+document.getElementById('a30').style.backgroundColor='grey';
+document.getElementById("a30").innerHTML=" ";
+x30--;
+i--;
+}
+//document.getElementById("common").innerHTML=i;
+}
+
+
+
+
+function f31() {
+if(x31%2==0 && i<4)
+{
+document.getElementById("a31").style.backgroundColor='#81DA43';
+//document.getElementById("a31").innerHTML="Seat Selected";
+
+x31++;
+i++;
+y31++;
+}
+else if(i==4 && y31==0) {
+document.getElementById("a31").disabled="true";
+}
+else
+{
+document.getElementById('a31').style.backgroundColor='grey';
+document.getElementById("a31").innerHTML=" ";
+x31--;
+i--;
+}
+//document.getElementById("common").innerHTML=i;
+}
+
+
+function f32() {
+if(x32%2==0 && i<4)
+{
+document.getElementById("a32").style.backgroundColor='#81DA43';
+//document.getElementById("a32").innerHTML="Seat Selected";
+s32="D2";
+array[n]=s32;
+n++;
+x32++;
+i++;
+y32++;
+}
+else if(i==4 && y32==0) {
+document.getElementById("a32").disabled="true";
+}
+else
+{
+document.getElementById('a32').style.backgroundColor='grey';
+document.getElementById("a32").innerHTML=" ";
+x32--;
+i--;
+}
+//document.getElementById("common").innerHTML=i;
+}
+
+
+function f33() {
+if(x33%2==0 && i<4)
+{
+document.getElementById("a33").style.backgroundColor='#81DA43';
+//document.getElementById("a33").innerHTML="Seat Selected";
+
+x33++;
+i++;
+y33++;
+}
+else if(i==4 && y33==0) {
+document.getElementById("a33").disabled="true";
+}
+else
+{
+document.getElementById('a33').style.backgroundColor='grey';
+document.getElementById("a33").innerHTML=" ";
+x33--;
+i--;
+}
+//document.getElementById("common").innerHTML=i;
+}
+
+
+function f34() {
+if(x34%2==0 && i<4)
+{
+document.getElementById("a34").style.backgroundColor='#81DA43';
+//document.getElementById("a34").innerHTML="Seat Selected";
+
+x34++;
+i++;
+y34++;
+}
+else if(i==4 && y34==0) {
+document.getElementById("a34").disabled="true";
+}
+else
+{
+document.getElementById('a34').style.backgroundColor='grey';
+document.getElementById("a34").innerHTML=" ";
+x34--;
+i--;
+}
+//document.getElementById("common").innerHTML=i;
+}
+
+
+
+function f35() {
+if(x35%2==0 && i<4)
+{
+document.getElementById("a35").style.backgroundColor='#81DA43';
+//document.getElementById("a35").innerHTML="Seat Selected";
+
+x35++;
+i++;
+y35++;
+}
+else if(i==4 && y35==0) {
+document.getElementById("a35").disabled="true";
+}
+else
+{
+document.getElementById('a35').style.backgroundColor='grey';
+document.getElementById("a35").innerHTML=" ";
+x35--;
+i--;
+}
+//document.getElementById("common").innerHTML=i;
+}
+
+
+
+function f36() {
+if(x36%2==0 && i<4)
+{
+document.getElementById("a36").style.backgroundColor='#81DA43';
+//document.getElementById("a36").innerHTML="Seat Selected";
+
+x36++;
+i++;
+y36++;
+}
+else if(i==4 && y36==0) {
+document.getElementById("a36").disabled="true";
+}
+else
+{
+document.getElementById('a36').style.backgroundColor='grey';
+document.getElementById("a36").innerHTML=" ";
+x36--;
+i--;
+}
+//document.getElementById("common").innerHTML=i;
+}
+
+
+
+
+function final() {
+
+if (x1==1)
+{
+document.getElementById("a1").style.backgroundColor='red';
+document.getElementById("a1").disabled="true";
+s1="A1";
+array[n]=s1;
+n++;
+}
+
+if (x2==1)
+{
+document.getElementById("a2").style.backgroundColor='red';
+document.getElementById("a2").disabled="true";
+s2="A2";
+array[n]=s2;
+n++;
+}
+
+if (x3==1)
+{
+document.getElementById("a3").style.backgroundColor='red';
+document.getElementById("a3").disabled="true";
+s3="B1";
+array[n]=s3;
+n++;
+}
+
+if (x4==1)
+{
+document.getElementById("a4").style.backgroundColor='red';
+document.getElementById("a4").disabled="true";
+s4="B2";
+array[n]=s4;
+n++;
+}
+
+if (x5==1)
+{
+document.getElementById("a5").style.backgroundColor='red';
+document.getElementById("a5").disabled="true";
+s5="C1";
+array[n]=s5;
+n++;
+}
+
+if (x6==1)
+{
+document.getElementById("a6").style.backgroundColor='red';
+document.getElementById("a6").disabled="true";
+s6="C2";
+array[n]=s6;
+n++;
+}
+
+if (x7==1)
+{
+document.getElementById("a7").style.backgroundColor='red';
+document.getElementById("a7").disabled="true";
+s7="D1";
+array[n]=s7;
+n++;
+}
+
+if (x8==1)
+{
+document.getElementById("a8").style.backgroundColor='red';
+document.getElementById("a8").disabled="true";
+s8="D2";
+array[n]=s8;
+n++;
+}
+
+if (x9==1)
+{
+document.getElementById("a9").style.backgroundColor='red';
+document.getElementById("a9").disabled="true";
+s9="E1";
+array[n]=s9;
+n++;
+}
+
+if (x10==1)
+{
+document.getElementById("a10").style.backgroundColor='red';
+document.getElementById("a10").disabled="true";
+s10="E2";
+array[n]=s10;
+n++;
+}
+
+if (x11==1)
+{
+document.getElementById("a11").style.backgroundColor='red';
+document.getElementById("a11").disabled="true";
+s11="F1";
+array[n]=s11;
+n++;
+}
+
+if (x12==1)
+{
+document.getElementById("a12").style.backgroundColor='red';
+document.getElementById("a12").disabled="true";
+s12="F2";
+array[n]=s12;
+n++;
+}
+
+if (x13==1)
+{
+document.getElementById("a13").style.backgroundColor='red';
+document.getElementById("a13").disabled="true";
+s13="G1";
+array[n]=s13;
+n++;
+}
+
+if (x14==1)
+{
+document.getElementById("a14").style.backgroundColor='red';
+document.getElementById("a14").disabled="true";
+s14="G2";
+array[n]=s14;
+n++;
+}
+
+if (x15==1)
+{
+document.getElementById("a15").style.backgroundColor='red';
+document.getElementById("a15").disabled="true";
+s15="H1";
+array[n]=s15;
+n++;
+}
+
+if (x16==1)
+{
+document.getElementById("a16").style.backgroundColor='red';
+document.getElementById("a16").disabled="true";
+s16="H2";
+array[n]=s16;
+n++;
+}
+
+if (x17==1)
+{
+document.getElementById("a17").style.backgroundColor='red';
+document.getElementById("a17").disabled="true";
+s17="I1";
+array[n]=s17;
+n++;
+}
+
+if (x18==1)
+{
+document.getElementById("a18").style.backgroundColor='red';
+document.getElementById("a18").disabled="true";
+s18="I2";
+array[n]=s18;
+n++;
+}
+
+if (x19==1)
+{
+document.getElementById("a19").style.backgroundColor='red';
+document.getElementById("a19").disabled="true";
+s19="A3";
+array[n]=s19;
+n++;
+}
+
+
+if (x20==1)
+{
+document.getElementById("a20").style.backgroundColor='red';
+document.getElementById("a20").disabled="true";
+s20="A4";
+array[n]=s20;
+n++;
+}
+
+if (x21==1)
+{
+document.getElementById("a21").style.backgroundColor='red';
+document.getElementById("a21").disabled="true";
+s21="B3";
+array[n]=s21;
+n++;
+}
+
+if (x22==1)
+{
+document.getElementById("a22").style.backgroundColor='red';
+document.getElementById("a22").disabled="true";
+s22="B4";
+array[n]=s22;
+n++;
+}
+
+if (x23==1)
+{
+document.getElementById("a23").style.backgroundColor='red';
+document.getElementById("a23").disabled="true";
+s23="C3";
+array[n]=s23;
+n++;
+}
+
+if (x24==1)
+{
+document.getElementById("a24").style.backgroundColor='red';
+document.getElementById("a24").disabled="true";
+s24="C4";
+array[n]=s24;
+n++;
+}
+
+if (x25==1)
+{
+document.getElementById("a25").style.backgroundColor='red';
+document.getElementById("a25").disabled="true";
+s25="D3";
+array[n]=s25;
+n++;
+}
+
+if (x26==1)
+{
+document.getElementById("a26").style.backgroundColor='red';
+document.getElementById("a26").disabled="true";
+s26="D4";
+array[n]=s26;
+n++;
+}
+
+if (x27==1)
+{
+document.getElementById("a27").style.backgroundColor='red';
+document.getElementById("a27").disabled="true";
+s27="E3";
+array[n]=s27;
+n++;
+}
+
+if (x28==1)
+{
+document.getElementById("a28").style.backgroundColor='red';
+document.getElementById("a28").disabled="true";
+s28="E4";
+array[n]=s28;
+n++;
+}
+
+if (x29==1)
+{
+document.getElementById("a29").style.backgroundColor='red';
+document.getElementById("a29").disabled="true";
+s29="F3";
+array[n]=s29;
+n++;
+}
+
+if (x30==1)
+{
+document.getElementById("a30").style.backgroundColor='red';
+document.getElementById("a30").disabled="true";
+s30="F4";
+array[n]=s30;
+n++;
+}
+
+if (x31==1)
+{
+document.getElementById("a31").style.backgroundColor='red';
+document.getElementById("a31").disabled="true";
+s31="G3";
+array[n]=s31;
+n++;
+}
+
+if (x32==1)
+{
+document.getElementById("a32").style.backgroundColor='red';
+document.getElementById("a32").disabled="true";
+s32="G4";
+array[n]=s32;
+n++;
+}
+
+if (x33==1)
+{
+document.getElementById("a33").style.backgroundColor='red';
+document.getElementById("a33").disabled="true";
+s33="H3";
+array[n]=s33;
+n++;
+}
+
+if (x34==1)
+{
+document.getElementById("a34").style.backgroundColor='red';
+document.getElementById("a34").disabled="true";
+s34="H4";
+array[n]=s34;
+n++;
+}
+
+if (x35==1)
+{
+document.getElementById("a35").style.backgroundColor='red';
+document.getElementById("a35").disabled="true";
+s35="I3";
+array[n]=s35;
+n++;
+}
+
+if (x36==1)
+{
+document.getElementById("a36").style.backgroundColor='red';
+document.getElementById("a36").disabled="true";
+s36="I4";
+array[n]=s36;
+n++;
+}
+
+
+if(seat==0) {
+
+if(i==1) {
+if(document.getElementById("sub").checked)
+{
+document.getElementById("det1").style.display="none";
+}
+else {
+document.getElementById("det1").style.display="block";
+}
+}
+
+if(i==2) {
+if(document.getElementById("sub").checked)
+{
+document.getElementById("det2").style.display="none";
+}
+else {
+document.getElementById("det2").style.display="block";
+}
+}
+
+if(i==3) {
+if(document.getElementById("sub").checked)
+{
+document.getElementById("det3").style.display="none";
+}
+else {
+document.getElementById("det3").style.display="block";
+}
+}
+
+if(i==4) {
+if(document.getElementById("sub").checked)
+{
+document.getElementById("det4").style.display="none";
+}
+else {
+document.getElementById("det4").style.display="block";
+}
+}
+
+seat=1;
+
+}
+
+if(document.getElementById("sub").checked)
+{
+document.getElementById("fin_button").style.display="none";
+}
+else {
+document.getElementById("fin_button").style.display="block";
+}
+
+}
+
+
+
+function submitt() {
+
+if (i==1)
+{
+name1 = document.getElementById("us1").value;
+age_1 = document.getElementById("age1").value;
+male_1 = document.getElementById("male1").value;
+female_1 = document.getElementById("female1").value;
+
+window.location="C:\Users\yerru\OneDrive\Desktop\Project";
+return false;
+}
+
+if (i==2)
+{
+name1 = document.getElementById("us21").value;
+age_1 = document.getElementById("age21").value;
+male_1 = document.getElementById("male21").value;
+female_1 = document.getElementById("female21").value;
+
+name2 = document.getElementById("us22").value;
+age_2 = document.getElementById("age22").value;
+male_2 = document.getElementById("male22").value;
+female_2 = document.getElementById("female22").value;
+
+}
+
+if(i==3)
+{
+name1 = document.getElementById("us31").value;
+age_1 = document.getElementById("age31").value;
+male_1 = document.getElementById("male31").value;
+female_1 = document.getElementById("female31").value;
+
+name2 = document.getElementById("us32").value;
+age_2 = document.getElementById("age32").value;
+male_2 = document.getElementById("male32").value;
+female_2 = document.getElementById("female32").value;
+
+name3 = document.getElementById("us33").value;
+age_3 = document.getElementById("age33").value;
+male_3 = document.getElementById("male33").value;
+female_3 = document.getElementById("female33").value;
+
+}
+
+if(i==4)
+{
+name1 = document.getElementById("us41").value;
+age_1 = document.getElementById("age41").value;
+male_1 = document.getElementById("male41").value;
+female_1 = document.getElementById("female41").value;
+
+name2 = document.getElementById("us42").value;
+age_2 = document.getElementById("age42").value;
+male_2 = document.getElementById("male42").value;
+female_2 = document.getElementById("female42").value;
+
+name3 = document.getElementById("us43").value;
+age_3 = document.getElementById("age43").value;
+male_3 = document.getElementById("male43").value;
+female_3 = document.getElementById("female43").value;
+
+name4 = document.getElementById("us44").value;
+age_4 = document.getElementById("age44").value;
+male_4 = document.getElementById("male44").value;
+female_4 = document.getElementById("female44").value;
+
+}
+
+}
+
+
+
+function validate()
+{
+var no1=document.f91.s1.value;
+var name=document.f91.us1.value;
+var age=document.f91.age1.value;
+
+if(no1=="")
+{
+alert("inValid  number");
+return false;
+}else if(name==""){
+//alert("inValid  name");
+return false;
+}else if(age==""){
+alert("inValid  age");
+return false;
+}else{
+alert("successful");
+return true;
+}
+
+}
+
+
+
+
+function validate1()
+{
+var no1=document.f92.s1.value;
+var name1=document.f92.us1.value;
+var age1=document.f92.age1.value;
+
+
+var no2=document.f92.s2.value;
+var name2=document.f92.us2.value;
+var age2=document.f92.age3.value;
+
+if(no1=="" || no2=="")
+{
+alert("inValid  number");
+return false;
+}else if(name1=="" || name2==""){
+//alert("inValid  name");
+return false;
+}else if(age1=="" || age2==""){
+alert("inValid  age");
+return false;
+}else{
+alert("successful");
+return true;
+}
+
+}
+
+
+function validate2()
+{
+var no1=document.f93.s1.value;
+var name1=document.f93.us1.value;
+var age1=document.f93.age1.value;
+
+
+var no2=document.f93.s2.value;
+var name2=document.f93.us2.value;
+var age2=document.f93.age2.value;
+
+var no3=document.f93.s3.value;
+var name3=document.f93.us3.value;
+var age3=document.f93.age3.value;
+if(no1=="" || no2=="" || no3=="")
+{
+alert("inValid  number");
+return false;
+}else if(name1=="" || name2=="" || name3==""){
+//alert("inValid  name");
+return false;
+}else if(age1=="" || age2=="" || age3==""){
+alert("inValid  age");
+return false;
+}else{
+alert("successful");
+return true;
+}
+
+}
+
+
+function validate3()
+{
+var no1=document.f94.s1.value;
+var name1=document.f94.us1.value;
+var age1=document.f94.age1.value;
+
+
+var no2=document.f94.s2.value;
+var name2=document.f94.us2.value;
+var age2=document.f94.age2.value;
+
+var no3=document.f94.s3.value;
+var name3=document.f94.us3.value;
+var age3=document.f94.age3.value;
+
+var no4=document.f94.s4.value;
+var name4=document.f94.us4.value;
+var age4=document.f94.age4.value;
+
+if(no1=="" || no2=="" || no3=="" || no4=="")
+{
+alert("inValid  number");
+return false;
+}else if(name1=="" || name2=="" || name3=="" ||name4==""){
+//alert("inValid  name");
+return false;
+}else if(age1=="" || age2=="" || age3=="" || age4==""){
+alert("inValid  age");
+return false;
+}else{
+alert("successful");
+return true;
+}
+
+}
+
+
+
+</script>
+<form action="one.php" method="post" name="f91" id="det1" class="form-container" align=center onsubmit="return validate();">
+    <h1>Passenger Details</h1>
+    <br>
+	<input type="number" id="s1" placeholder="SeatNo" name="s1" required>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="text" id="us1" class="details" placeholder="Name" name="us1" >
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="number" id="age1" class="age" placeholder="Age" name="age1" required>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="radio" name="gender1" id="male1" value="male"><label for="male1" style="font-family:Verdana; color:grey;">Male</label>&nbsp &nbsp&nbsp&nbsp&nbsp
+    <input type="radio" name="gender1" id="female1" value="female"><label for="female1" style="font-family:Verdana; color:grey;">Female</label><br>
+
+
+    <input type="submit" name="submit" value="SUBMIT" class="confirm" >
+</form>
+<form action="two.php" method="post" name="f92" id="det2" class="form-container" align=center onsubmit="return validate1();">
+    <h1>Passenger Details</h1>
+    <br>
+	<input type="number" id="s1" placeholder="SeatNo" name="s1" required>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="text" id="us21" class="details" placeholder="Name" name="us1" required>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="number" id="age21" class="age" placeholder="Age" name="age1" required>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="radio" name="gender1" id="male21" value="male"><label for="male1" style="font-family:Verdana; color:grey;">Male</label>&nbsp &nbsp&nbsp&nbsp&nbsp
+    <input type="radio" name="gender1" id="female21" value="female"><label for="female1" style="font-family:Verdana; color:grey;">Female</label><br>
+    <br>
+	<input type="number" id="s1" placeholder="SeatNo" name="s2" required>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="text" id="us22" class="details" placeholder="Name" name="us2" required>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="number" id="age22" class="age" placeholder="Age" name="age2" required>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="radio" name="gender2" id="male22" value="male"><label for="male2" style="font-family:Verdana; color:grey;">Male</label>&nbsp &nbsp&nbsp&nbsp&nbsp
+    <input type="radio" name="gender2" id="female22" value="female"><label for="female2" style="font-family:Verdana; color:grey;">Female</label><br>
+<input type="submit" name="submit" value="SUBMIT" class="confirm"  >
+</form>
+
+
+<form action="three.php" method="post" name="f93" id="det3" class="form-container" align=center onsubmit="return validate2()";>
+    <h1>Passenger Details</h1>
+    <br>
+	<input type="number" id="s1" placeholder="SeatNo" name="s1" required>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="text" id="us31" class="details" placeholder="Name" name="us1" required>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="number" id="age31" class="age" placeholder="Age" name="age1" required>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="radio" name="gender1" id="male31" value="male"><label for="male1" style="font-family:Verdana; color:grey;">Male</label>&nbsp &nbsp&nbsp&nbsp&nbsp
+    <input type="radio" name="gender1" id="female31" value="female"><label for="female1" style="font-family:Verdana; color:grey;">Female</label><br>
+    <br>
+	<input type="number" id="s1" placeholder="SeatNo" name="s2" required>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="text" id="us32" class="details" placeholder="Name" name="us2" required>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="number" id="age32" class="age" placeholder="Age" name="age2" required>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="radio" name="gender2" id="male32" value="male"><label for="male2" style="font-family:Verdana; color:grey;">Male</label>&nbsp &nbsp&nbsp&nbsp&nbsp
+    <input type="radio" name="gender2" id="female32" value="female"><label for="female2" style="font-family:Verdana; color:grey;">Female</label><br>
+    <br>
+	<input type="number" id="s1" placeholder="SeatNo" name="s3" required>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="text" id="us33" class="details" placeholder="Name" name="us3" required>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="number" id="age33" class="age" placeholder="Age" name="age3" required>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="radio" name="gender3" id="male33" value="male"><label for="male3" style="font-family:Verdana; color:grey;">Male</label>&nbsp &nbsp&nbsp&nbsp&nbsp
+    <input type="radio" name="gender3" id="female33" value="female"><label for="female3" style="font-family:Verdana; color:grey;">Female</label><br>
+
+<input type="submit" name="submit" value="SUBMIT" class="confirm"  >
+</form>
+
+
+<form action="four.php" method="post" name="f94" id="det4" class="form-container" align=center onsubmit="return validate3()";> 
+    <h1>Passenger Details</h1>
+    <br>
+	<input type="number" id="s1" placeholder="SeatNo" name="s1" required>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="text" id="us41" class="details" placeholder="Name" name="us1" required>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="number" id="age41" class="age" placeholder="Age" name="age1" required>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="radio" name="gender1" id="male41" value="male"><label for="male1" style="font-family:Verdana; color:grey;">Male</label>&nbsp &nbsp&nbsp&nbsp&nbsp
+    <input type="radio" name="gender1" id="female41" value="female"><label for="female1" style="font-family:Verdana; color:grey;">Female</label><br>
+    <br>
+	<input type="number" id="s1" placeholder="SeatNo" name="s2" required>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="text" id="us42" class="details" placeholder="Name" name="us2" required>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="number" id="age42" class="age" placeholder="Age" name="age2" required>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="radio" name="gender2" id="male42" value="male"><label for="male2" style="font-family:Verdana; color:grey;">Male</label>&nbsp &nbsp&nbsp&nbsp&nbsp
+    <input type="radio" name="gender2" id="female42" value="female"><label for="female2" style="font-family:Verdana; color:grey;">Female</label><br>
+    <br>
+	<input type="number" id="s1" placeholder="SeatNo" name="s3" required>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="text" id="us43" class="details" placeholder="Name" name="us3" required>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="number" id="age43" class="age" placeholder="Age" name="age3" required>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="radio" name="gender3" id="male43" value="male"><label for="male3" style="font-family:Verdana; color:grey;">Male</label>&nbsp &nbsp&nbsp&nbsp&nbsp
+    <input type="radio" name="gender3" id="female43" value="female"><label for="female3" style="font-family:Verdana; color:grey;">Female</label><br>
+    <br>
+	<input type="number" id="s1" placeholder="SeatNo" name="s4" required>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="text" id="us44" class="details" placeholder="Name" name="us4" required>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="number" id="age44" class="age" placeholder="Age" name="age4" required>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="radio" name="gender4" id="male44" value="male"><label for="male4" style="font-family:Verdana; color:grey;">Male</label>&nbsp &nbsp&nbsp&nbsp&nbsp
+    <input type="radio" name="gender4" id="female44" value="female"><label for="female4" style="font-family:Verdana; color:grey;">Female</label><br>
+
+<input type="submit" name="submit" value="SUBMIT" class="confirm" >
+</form>
+
+
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,35 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="netbanking.css">
+</head>
+<body align=center >
+<br>
+<h3>Enter Your Login Credentials</h3>
+<form method="get">
+<p align="center" style="font-size:150%;">
+<br>
+
+Username :
+<input type="text" required>
+</p>
+<p align="center" style="font-size:150%;">
+Password :
+<input type="password" required>
+</p>
+
+<input type="button" value="PROCEED" onclick="next_page();">
+<input type="reset" value="RESET">
+</form>
+<script language='javascript'>
+var myVar;
+function next_page()
+{
+myVar=setTimeout(next_page1,1000);
+}
+function next_page1()
+{
+window.location='otp2.html';
+}
+</script>
+</body>
+</html>

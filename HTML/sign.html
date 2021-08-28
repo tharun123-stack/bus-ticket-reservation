@@ -1,0 +1,169 @@
+<html>
+<head>
+ 
+<script>
+
+
+function validate()
+{
+var uname=document.f1.uname1.value;
+var pname=document.f1.pname1.value;
+var pass=document.f1.pass1.value;
+var address=document.f1.address1.value;
+var age=document.f1.age1.value;
+var p=/^[7-9]\d{9}$/;
+var no=document.f1.phone1.value;
+
+var mailformat = /^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9-]+).([a-z]{2,8})(.[a-z]{2,8})?$/;
+var mail=document.f1.email1.value;
+
+var aformat = /^\d{12}$/;
+var aadhar=document.f1.aadhar1.value;
+if(uname=="" || pname=="" || pass=="" || address=="" || age=="")
+{
+//alert("Details must must be filled out");
+return false;
+}
+else if(!no.match(p))
+{
+//alert("inValid Phone number");
+return false;
+}
+else if(!mail.match(mailformat))
+{
+//alert("invalid mail id");
+return false;
+}
+else if(!aadhar.match(aformat))
+{
+//alert("valid aadhar number");
+return false;
+}else{
+alert("valid details");
+return true;
+}
+}
+</script>
+
+
+<style>
+
+h1 {
+color: #ff4852;
+margin: 2% 0% 0% 42%;
+text-shadow:  -1px 0 black;
+}
+
+body {
+  background-image: url("signup5.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.button1 {
+width:  70px;
+height: 30px;
+border: none;
+outline: none;
+background-color:#FA3D4B;
+color: white;
+margin:0% 0% 0% 42%;
+cursor: pointer;
+}
+
+.button2 {
+width:  70px;
+height: 30px;
+border: none;
+outline: none;
+background-color:#FA3D4B;
+color: white;
+margin:0% 0% 0% 3%;
+cursor: pointer;
+}
+
+.box {
+opacity: 0.7;
+margin: 2% 0% 0% 38%; 
+width:20%;
+height: 5%;
+outline: none;
+border-radius:50px;
+border-color:#31B68D;
+cursor:text;
+}
+
+.box2 {
+opacity: 0.7;
+margin: 2% 0% 0% 38%; 
+width:5%;
+height: 5%;
+outline: none;
+border-radius:50px;
+border-color:#31B68D;
+cursor:text;
+}
+
+.mar {
+margin: 2% 0% 0% 3%; 
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+} // for removing the scroll of number input
+
+ 
+</style>
+
+</head>
+
+
+<body>
+
+<h1>Sign-up Details</h1>
+
+<br>
+<br>
+
+<form  name="f1" method="post" action="val.php" onsubmit="return validate();"  >
+
+
+<input type="text" class="box" name="pname1" placeholder="Name" autocomplete="off" style="font-size:15px; color:#000000; padding:8px;"> 
+ 
+
+<input type="text" class="box" name="uname1" placeholder="Username" autocomplete="off" style="font-size:15px; padding:8px;" > 
+  
+
+<input type="password" class="box" name="pass1" placeholder="Password" autocomplete="off" style="font-size:15px; padding:8px;" >
+  
+
+<input type="number" class="box2" name="age1" placeholder="Age" autocomplete="off" style="font-size:15px; padding:8px;" >
+ 
+ 
+
+<input type="radio" value="Male" name="gender" class="mar" style="cursor:pointer;"> <label for="gender"  style="font-size:18px; color:white;" >Male</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="radio" value="Female" name="gender" style="cursor:pointer;"> <label for="gender"style="font-size:18px; color:white;" >Female</label>
+  
+
+<input type="text" class="box" name="phone1" placeholder="Phone No." autocomplete="off" style="font-size:15px; padding:8px;" >
+ 
+<input type="email" class="box" name="email1" placeholder="E-mail" autocomplete="off" style="font-size:15px; padding:8px;" >
+  
+<input type="number" class="box" name="aadhar1" placeholder="Aadhaar Number" autocomplete="off" style="font-size:15px; padding:8px;"  >
+
+<input type="textarea" class="box" name="address1" placeholder="Address" autocomplete="off" style="font-size:15px; padding:8px;">
+
+<br><br>
+ 
+
+<input  type="submit" name="submit" value="SUBMIT" class="button1">
+<input  type="button" value="CLEAR" class="button2">
+ 
+ 
+ 
+</form>
+ 
+
+</body>
+</html>

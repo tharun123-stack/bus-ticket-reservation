@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Homepage
+</title>
+<link rel="stylesheet" type="text/css" href="netbanking.css">
+<style>
+body {
+  background-image: url('search image.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover
+}
+
+</style>
+</head>
+
+<body align="center" style="font-size:100%;">
+<br>
+<form>
+<p><b>From :</b>
+<select style="font-size:100%;" id="from">
+  <option value="Chennai">Chennai</option>
+  <option value="Hyderabad">Hyderabad</option>
+  <option value="Bengaluru">Bengaluru</option>
+  <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+</select>
+
+<b> To :</b>
+<select style="font-size:100%;" id="to">
+  <option value="Chennai">Chennai</option>
+  <option value="Hyderabad">Hyderabad</option>
+  <option value="Bengaluru">Bengaluru</option>
+  <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+</select>
+</p>
+<p>
+<b>Date-of-Journey :</b>
+<input style="font-size:100%;" type="date" id="myDate" name="date" required>
+</p>
+</form>
+<p>&nbsp
+<input type="submit" value="Search" onclick="place_Selection();">
+</p>
+
+<p id="error" style="color:red"></p>
+
+<script>
+function place_Selection(){
+
+  var f = document.getElementById("from").value;
+  var t = document.getElementById("to").value;
+
+if((f=="Chennai" && t=="Chennai")||(f=="Hyderabad" && t=="Hyderabad")||(f=="Bengaluru" && t=="Bengaluru")||(f=="Thiruvananthapuram" && t=="Thiruvananthapuram"))
+{
+document.getElementById("error").innerHTML = "Choose the Place properly!";
+
+}
+
+else
+{
+window.location.href="bus.html";
+}
+}
+
+</script>
+
+
+
+
+
+</body>
+</html>

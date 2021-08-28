@@ -1,0 +1,32 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="netbanking.css">
+<script language='javascript'>
+var myVar;
+function next_page()
+{
+myVar=setTimeout(next_page1,1000);
+}
+function next_page1()
+{
+window.location='netbank2.html';
+}
+</script>
+</head>
+<body align="center">
+
+<br><h1>Welcome to NETBANKING</h1><hr style= "border-top: 2px solid black">
+
+<p style="font-size:20px"> PLEASE SELECT YOUR BANK:</p>
+<select  required>
+<option>INDIAN BANK</option>
+<option>INDIAN OVERSEAS BANK</option>
+<option>CITY UNION BANK</option>
+<option>STATE BANK OF INDIA</option>
+<option>HDFC BANK</option>
+</select><br>
+<br>
+<input type=submit value="PROCEED" onclick="next_page()">
+<hr style= "border-top: 2px solid black">
+</body>
+</html>

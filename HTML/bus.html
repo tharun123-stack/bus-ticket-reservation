@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>bus details</title>
+<style>
+.buttons {
+height: 30px;
+border: none;
+outline: none;
+border-radius:5px;
+background-color:#52D74D;
+color: white;
+}
+
+
+.buttons:hover{
+background-color:green;
+}
+
+body {
+  background-image: url('search image.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover
+}
+</style>
+<script>
+ function NewTab() { 
+            window.open( 
+              "hello.html","", "width=1080, height=1080"); 
+        }
+</script>
+</head>
+<body align="center" background="search image.jpg">
+<h1>SELECT BUSES!!</h1>
+<table align="center" border="1" cellspacing="0" cellpadding="10">
+<tr>
+<th>S.No</th>
+<th>Bus Name</th>
+<th>Type</th>
+<th>Cost</th>
+<th>Select</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>Praveen Travels</td>
+<td>AC</td>
+<td>1200/-</td>
+<td><input type="radio" name="b"></td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>Srm Travels</td>
+<td>NAC</td>
+<td>600/-</td>
+<td><input type="radio" name="b"></td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>Super Travels</td>
+<td>Sleeper</td>
+<td>1000/-</td>
+<td><input type="radio" name="b"></td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>Morning Travels</td>
+<td>Non-sleeper</td>
+<td>700/-</td>
+<td><input type="radio" name="b"></td>
+</tr>
+
+
+<tr>
+<td>5</td>
+<td>Volvo Travels</td>
+<td>semi-sleeper</td>
+<td>900/-</td>
+<td><input type="radio" name="b"></td>
+</tr>
+</table>
+<br>
+<input type="submit" class="buttons" value="Continue" onclick="NewTab();">
+<br>
+
+</body>
+</html>

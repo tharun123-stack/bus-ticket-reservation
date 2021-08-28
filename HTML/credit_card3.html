@@ -1,0 +1,166 @@
+<html>
+<head>
+<style>
+input[type=text]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid lightgrey;
+  border-radius: 7px;
+  box-sizing: border-box;
+}
+
+select {
+  width: 45%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid lightgrey;
+  border-radius: 7px;
+  box-sizing: border-box;
+}
+
+
+input[type=submit] {
+  width: 100%;
+  background-color: red;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: cyan;
+color:black;
+}
+
+div {
+margin: 30px 150px;
+ width:60%;
+  border-radius: 9px;
+  background-color:	 white;
+  padding: 20px;
+}
+
+select:required:invalid {
+        color: grey;
+      }
+      option[value=""][disabled] {
+        display: none;
+      }
+      option {
+        color: #000;
+      }
+
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<script language='javascript'>
+function confirm()
+{
+var number;
+var name;
+var month;
+var year;
+var cvv;
+
+number=document.getElementById("a1").value;
+name=document.getElementById("b1").value;
+month=document.getElementById("c1").value;
+year=document.getElementById("d1").value;
+cvv=document.getElementById("e1").value;
+
+if(number == "")
+{
+window.alert("Enter your Card Number please !!");
+return false; //makes sure that the value is again re typed
+}
+
+else if(name == "")
+{
+window.alert("Please Enter the Name......");
+return false; //makes sure that the value is again re typed
+}
+
+else if(month == "")
+{
+window.alert("Please Enter Month......");
+return false; //makes sure that the value is again re typed
+}
+
+else if(year == "")
+{
+window.alert("Please Enter Year.....");
+return false; //makes sure that the value is again re typed
+}
+
+
+else if(cvv == "")
+{
+window.alert("Please Enter CVV.....");
+return false; //makes sure that the value is again re typed
+}
+else
+{
+alert('TRANSACTION SUCCESSFULL!!');
+ window.open("final_page_three.php","", "width=1080, height=1000"); 
+}
+}
+</script>
+
+
+</head>
+
+<body bgcolor=#E040FB >
+<br>
+<h1 align=center>CREDIT CARD PAYMENT</H1>
+<div>
+<form>
+<h2 align=center> ACCEPTED CARDS</H2>
+           <p align=center style="font-size:35px">&nbsp   <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i></p>
+<input type=text placeholder="Cardnumber" id="a1"required>
+<input type=text placeholder="Name on the Card"  id="b1" required>
+<select id="c1" required >
+<option value="" disabled  selected >Month</option>
+  <option value="January">January</option>
+  <option value="February">February</option>
+  <option value="March">March</option>
+  <option value="April">April</option>
+  <option value="May">May</option>
+  <option value="June">June</option>
+  <option value="July">July</option>
+  <option value="August">August</option>
+  <option value="September">September</option>
+  <option value="October">October</option>
+  <option value="November">November</option>
+  <option value="December">December</option>
+</select>&nbsp &nbsp&nbsp&nbsp&nbsp &nbsp &nbsp&nbsp 
+
+<select id="d1" required>
+<option value="" disabled  selected >Year</option>
+  <option value="2020">2020</option>
+  <option value="2021">2021</option>
+  <option value="2022">2022</option>
+  <option value="2023">2023</option>
+  <option value="2024">2024</option>
+  <option value="2025">2025</option>
+
+</select>
+
+<input  type=text style="width:45%" placeholder="CVV" id="e1" required>
+
+<input type=submit value=PAY onclick="confirm()">
+</div>
+</form>
+<BR>
+</body>
+</html>
